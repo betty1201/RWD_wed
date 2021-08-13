@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>美少年夢工廠</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="navbar-toggle">
+                <span></span>
+            </a>
+            
+            <div class="container">
+                <h1 class="navbar-header">
+                    <a href="#page-top">美少年夢工廠3 ~重生~</a>
+                </h1>
+                <ul class="navbar-nav">
+                    <li><a href="#pv">宣傳影音</a></li>
+                    <li><a href="#cardBox">遊戲特色</a></li>
+                    <li><a href="#cardBox">畫廊</a></li>
+                    <li><a href="#download">下載</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h3>美少男夢工廠3 ~重生~</h3>
+        <hr>
+        <p>美少男夢工廠3 ~重生~ 是alfa遊戲組原創遊戲。<br>玩家在3代故事中，將扮演神族的培養人。與神族候選人“白羽”，在三界城中共同生活6年。<br>目標將其培養成人，走上自己所選擇的人生道路。在6年的生活中，感受他的喜怒哀樂。</p>
+    </header>
+
+    <hr>
+
+    <div id="pv">
+        <h3>OP</h3>
+        <p>以少數民族語言做為參考的世界語歌詞，奇幻的旋律帶領玩家進入三界共存的世界</p>
+        <img src="img/PV.jpg" class="img-rounded youtube"  href="https://www.youtube.com/watch?v=RJExOtbJf1A" width="500" height="313" alt="PV"/>
+    </div>
+
+    <hr>
+
+    <section id="cardBox">
+
+            <div class="card">
+                <img src="img/1.jpg" alt="三界王候選人">
+                <a href="img/lg/1.jpg">三界王候選人<br>亦敵亦友的關係</a>
+            </div>
+
+            <div class="card">
+                <img src="img/2.jpg" alt="三界王候選人">
+                <a href="img/lg/2.jpg">白羽<br>帶著神秘身世而來的神族候選人</a>
+            </div>
+
+            <div class="card">
+                <img src="img/3.jpg" alt="三界王候選人">
+                <a href="img/lg/3.jpg">黑彌<br>被世人譽為天才少年的人族候選人</a>
+            </div>
+
+            <div class="card">
+                <img src="img/4.jpg" alt="三界王候選人">
+                <a href="img/lg/4.jpg">伊迪亞<br>身負刑罰刺青的魔族候選人</a>
+            </div>
+
+            <div class="card">
+                <img src="img/5.jpg" alt="三界王候選人">
+                <a href="img/lg/5.jpg">羅娜麗<br>高傲的劍術少女</a>
+            </div>
+
+            <div class="card">
+                <img src="img/6.jpg" alt="三界王候選人">
+                <a href="img/lg/6.jpg">安娜貝爾<br>遺失記憶的溫柔魔法師</a>
+            </div>
+
+            <div class="card">
+                <img src="img/7.jpg" alt="三界王候選人">
+                <a href="img/lg/7.jpg">西蒙<br>沉默寡言的長髮美人</a>
+            </div>
+
+            <div class="card">
+                <img src="img/8.jpg" alt="三界王候選人">
+                <a href="img/lg/8.jpg">克里恩<br>默默在背後支持的管家</a>
+            </div>
+
+            <div class="card">
+                <img src="img/9.jpg" alt="三界王候選人">
+                <a href="img/lg/9.jpg">出遊<br>「吶，可以吃兩個嗎？」</a>
+            </div>
+
+            <div class="card">
+                <img src="img/10.jpg" alt="三界王候選人">
+                <a href="img/lg/10.jpg">背負的責任<br>「我一直覺得自己沒有時間去傷心。」</a>
+            </div>
+
+            <div class="card">
+                <img src="img/11.jpg" alt="三界王候選人">
+                <a href="img/lg/11.jpg">攜手的對象<br>「永遠永遠，只看著我一個人。」</a>
+            </div>
+
+            <div class="card">
+                <img src="img/12.jpg" alt="三界王候選人">
+                <a href="img/lg/12.jpg">最後的結局<br>究竟是注定的命運，還是輪迴的宿命</a>
+            </div>
+
+    </section>
+    
+    <hr>
+
+    <div id="download">
+        <h2>alfagame製作，免費釋出下載</h2>
+        <a href="http://www.alfagame.net/newbbs/viewthread.php?tid=2175">Download</a>
+    </div>
+
+    <hr>
+
+    <footer>
+        <img src="img/alfagame.png">
+        <p> &#64; alfagame製作組 </p>
+    </footer>
+    
+
+    <script>
+        $(document).ready(function () {
+            $('.navbar-toggle').click(function(e) {
+                e.preventDefault();
+                $('.navbar-nav').toggleClass('active');
+            })
+            $('.card').click(function(e) {
+                e.preventDefault();
+            })
+
+            $(window).scroll(function() {
+                if ($("nav").offset().top > 100) {
+                    $("nav").addClass("navbar-shrink");
+                    $('.navbar-nav').removeClass('active');
+                } else {
+                    $("nav").removeClass("navbar-shrink");
+                }
+            });
+        }); 
+
+    </script>
+
+</body>
+</html>

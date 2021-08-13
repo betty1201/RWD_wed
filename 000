@@ -1,0 +1,14 @@
+     <div id='modal'> <img id='bgImg'> </div>
+
+    <script>
+        var modal = document.getElementById('modal');
+        var bgImg = document.getElementById('bgImg');
+        function showBgImg(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+            bgImg.src = e.href;
+        }
+        bgImg.onclick = function() {
+            modal.style.display = 'none';
+        }
+    </script>
